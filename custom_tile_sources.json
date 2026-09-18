@@ -1,0 +1,135 @@
+{
+    "version": 1,
+    "sources": [
+        {
+            "id": "custom_tencent_vector",
+            "name": "腾讯地图",
+            "urlTemplate": "http://rt{s}.map.gtimg.com/realtimerender?z={z}&x={x}&y={-y}&type=vector&style=0",
+            "subdomains": ["0", "1", "2", "3"],
+            "scheme": "XYZ",
+            "minZoom": 3,
+            "maxZoom": 18,
+            "coordinateSystem": "Gcj02"
+        },
+        {
+            "id": "google_satellite",
+            "name": "Google 卫星",
+            "urlTemplate": "https://mt{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}",
+            "subdomains": ["0", "1", "2", "3"],
+            "scheme": "XYZ",
+            "minZoom": 1,
+            "maxZoom": 20,
+            "coordinateSystem": "Wgs84"
+        },
+        {
+            "id": "google_map",
+            "name": "Google 地图",
+            "urlTemplate": "https://mt{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}",
+            "subdomains": ["0", "1", "2", "3"],
+            "scheme": "XYZ",
+            "minZoom": 1,
+            "maxZoom": 20,
+            "coordinateSystem": "Wgs84"
+        },
+        {
+            "id": "google_hybrid",
+            "name": "Google 混合",
+            "urlTemplate": "https://mt{s}.google.com/vt/lyrs=y&x={x}&y={y}&z={z}",
+            "subdomains": ["0", "1", "2", "3"],
+            "scheme": "XYZ",
+            "minZoom": 1,
+            "maxZoom": 20,
+            "coordinateSystem": "Wgs84"
+        },
+        {
+            "id": "google_terrain",
+            "name": "Google 地形",
+            "urlTemplate": "https://mt{s}.google.com/vt/lyrs=t&x={x}&y={y}&z={z}",
+            "subdomains": ["0", "1", "2", "3"],
+            "scheme": "XYZ",
+            "minZoom": 1,
+            "maxZoom": 15,
+            "coordinateSystem": "Wgs84"
+        },
+        {
+            "id": "osm",
+            "name": "OpenStreetMap",
+            "urlTemplate": "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+            "subdomains": ["a", "b", "c"],
+            "scheme": "XYZ",
+            "minZoom": 1,
+            "maxZoom": 19,
+            "coordinateSystem": "Wgs84"
+        },
+        {
+            "id": "arcgis_satellite",
+            "name": "ArcGIS 卫星",
+            "urlTemplate": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+            "subdomains": [],
+            "scheme": "XYZ",
+            "minZoom": 1,
+            "maxZoom": 19,
+            "coordinateSystem": "Wgs84"
+        },
+        {
+            "id": "carto_light",
+            "name": "Carto Light",
+            "urlTemplate": "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png",
+            "subdomains": ["a", "b", "c", "d"],
+            "scheme": "XYZ",
+            "minZoom": 1,
+            "maxZoom": 19,
+            "coordinateSystem": "Wgs84"
+        },
+        {
+            "id": "carto_dark",
+            "name": "Carto Dark",
+            "urlTemplate": "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png",
+            "subdomains": ["a", "b", "c", "d"],
+            "scheme": "XYZ",
+            "minZoom": 1,
+            "maxZoom": 19,
+            "coordinateSystem": "Wgs84"
+        },
+        {
+            "id": "arcgis_topo",
+            "name": "ArcGIS 地形",
+            "urlTemplate": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}",
+            "subdomains": [],
+            "scheme": "XYZ",
+            "minZoom": 1,
+            "maxZoom": 19,
+            "coordinateSystem": "Wgs84"
+        },
+        {
+            "id": "arcgis_street",
+            "name": "ArcGIS 街道",
+            "urlTemplate": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}",
+            "subdomains": [],
+            "scheme": "XYZ",
+            "minZoom": 1,
+            "maxZoom": 19,
+            "coordinateSystem": "Wgs84"
+        },
+        {
+            "id": "opentopomap",
+            "name": "OpenTopoMap",
+            "urlTemplate": "https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png",
+            "subdomains": ["a", "b", "c"],
+            "scheme": "XYZ",
+            "minZoom": 1,
+            "maxZoom": 17,
+            "coordinateSystem": "Wgs84"
+        },
+        {
+            "id": "bing_satellite",
+            "name": "必应卫星图（19级）",
+            "urlTemplate": "https://ecn.t{s}.tiles.virtualearth.net/tiles/a{q}.jpeg?g=1&n=z",
+            "subdomains": ["0", "1", "2", "3"],
+            "scheme": "XYZ",
+            "minZoom": 1,
+            "maxZoom": 19,
+            "coordinateSystem": "Wgs84"
+        }
+    ]
+}
